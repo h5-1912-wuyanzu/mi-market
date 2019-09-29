@@ -2,14 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>购物车</title>
+    <title>Jquery实现小米购物车案例</title>
+   <link rel="stylesheet" href="css/index.css">
+   
+    <script src="./js/jquery.js"></script>
+     <script src="./js/index.js"></script>
 </head>
 <body>
-    <div id="mi-top"></div>
-    <div id="mi-main"></div>
-    <div id="mi-tuijian"></div>
-    <div id="mi-bottom"></div>
+<div>
+    <img src="Img_MI/mi.png" alt="">
+</div>
+<h1>小米商城购物车</h1>>
+<table>
+    <!--用长表格实现布局-->
+    <thead>
+    <tr>
+        <th>商品</th>
+        <th>单价（元）</th>
+        <th>数量</th>
+        <th>金额（元）</th>
+        <th>删除</th>
+    </tr>
+    </thead>
+    <tbody id="goods">
+ 
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="3" >总计</td>
+        <td id="total"></td>
+        <td></td>
+    </tr>
+    </tfoot>
+</table>
+<br/>
+<br/>
+<h1>小米商城</h1>
+<table id="table1">
+    <tr>
+        <th>商品</th>
+        <th>单价（元）</th>
+        <th>颜色</th>
+        <th>库存</th>
+        <th>好评率</th>
+        <th>操作</th>
+    </tr>
+    <tr>
+        <td>阿玛尼T恤</td>
+        <td>100</td>
+        <td>黑色</td>
+        <td>30</td>
+        <td>99%</td>
+        <td align="center">
+            <input type="button" value="放入购物车" οnclick="add_shoppingcart(this);"/>
+        </td>
+    </tr>
+    <tr>
+        <td>PUMA亚洲挂带</td>
+        <td>250</td>
+        <td>红色</td>
+        <td>100</td>
+        <td>100%</td>
+        <td align="center">
+            <input type="button" value="放入购物车" οnclick="add_shoppingcart(this);"/>
+        </td>
+    </tr>
+    <tr>
+        <td>瑞士军刀</td>
+        <td>168</td>
+        <td>黑色</td>
+        <td>6</td>
+        <td>88%</td>
+        <td align="center">
+            <input type="button" value="放入购物车" οnclick="add_shoppingcart(this)"/>
+        </td>
+    </tr>
+    <tr>
+        <td>大哥大</td>
+        <td>550</td>
+        <td>金色</td>
+        <td>30</td>
+        <td>99%</td>
+        <td align="center">
+            <input type="button" value="放入购物车" οnclick="add_shoppingcart(this);"/>
+        </td>
+    </tr>
+ 
+</table>
+<br/>
+<br/>
+<br/>
+<div>
+    <img src="Img_MI/buttom.png"  width="1350px" alt="">
+</div>
+
 </body>
 </html>
